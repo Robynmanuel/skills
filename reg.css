@@ -1,0 +1,139 @@
+/* css code for formreg page*/
+
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Raleway");
+body{
+    margin: 0;
+    
+  }
+  
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid slategrey;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#ree{
+    margin-left: 2%;
+    padding: 40px;
+    width: 60%;
+    min-width: 300px;
+  }
+  
+    h1 {
+    padding-left: 5%; 
+    padding-top: 5%;
+    font-family: "Raleway";
+  }
+  
+    p {
+    padding-left: 5%; 
+    padding-top: 3%;
+    font-family: "Raleway";
+  }
+  
+    label {
+    padding-left: 5%; 
+    padding-top: 5%;
+    font-family: "Raleway";
+  }
+  
+#rit{
+    background-color: black;
+    position: fixed;
+    background-size: cover;
+    width: 300px;
+    height: 1755px;
+    margin-left: 76%;
+    margin-top: -50%;
+  }
+  
+    #module{
+    padding: 10px;
+    margin-top: 25px;
+    margin-right: 20px;
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+  
+  #program{
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+  
+  #grade{
+    padding: 10px;
+    width: 20%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+
+  #sub{
+    width: 150px;
+    height: 50px;
+    margin-left: 75%;
+    margin-top: 10%;
+    padding-top: 2px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "trirong", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#sub:hover, #sub:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}
+
+#clrr{
+    width: 200px;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: -13%;
+    padding-top: 2px;
+    font-family: "Raleway";
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#clrr:hover, #clrr:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}

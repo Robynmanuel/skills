@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+#iis{
+  background-color: black;
+  position: fixed;
+  background-size: cover;
+
+  width: 300px;
+  height: 1755px;
+  margin-left: 76%;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin-top: -2%;
+  margin-left: 2%;
+  font-family: Raleway;
+  padding: 40px;
+  width: 60%;
+  min-width: 300px;
+}
+
+h1 {
+  padding-left: 2px; 
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+#tabb{
+  display: flex;
+}
+
+#tabb1{
+  flex-grow: 1;
+}
+
+#tabb2{
+  margin-left: -4%;
+  flex-grow: 1;
+}
+
+button {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  margin-top: 30%;
+  margin-left: -85%;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#social{
+  padding: 10px;
+  width: 60%;
+  height: 44px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+#bts1{
+  margin-left: 50%;
+  margin-top: -5%;
+}
+
+#bts2{
+  margin-left: 90%;
+  margin-top: -4%;
+}
+
+#ads{
+  height: 200px;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: black;
+}
+
+
+</style>
+<body>
+<div id="iis"></div>
+<form id="regForm" action="formreg.php" method="post">
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab"><h1>How should employer's contact you?</h1>
+    <div id="tabb">
+    <p id="tabb1"><input placeholder="First name..." oninput="this.className = ''" name="firstname"></p>
+    <p id="tabb2"><input placeholder="Last name..." oninput="this.className = ''" name="lastname"></p>
+    </div>
+    <p><input placeholder="Profession..." oninput="this.className = ''" name="profession"></p>
+    <div id="tabb">
+      <p id="tabb1"><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+      <p id="tabb2"><input placeholder="Email Address..." oninput="this.className = ''" name="email"></p>
+      </div>
+      <div id="tabb">
+        <p><input placeholder="City..." oninput="this.className = ''" name="city"></p>
+        <p id="tabb1"><input placeholder="State/Province..." oninput="this.className = ''" name="state"></p>
+        <p id="tabb2"><input placeholder="Post Code..." oninput="this.className = ''" name="postcode"></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1"><label for="social">Social link:</label>
+            <select id="social" name="social">
+              <option value="Select">Select</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Website">Website</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+            </select></p>
+          <p id="tabb2"><input placeholder="Hyperlink..." oninput="this.className = ''" name="link"></p>
+          </div>
+  </div>
+
+  <div class="tab"><h1>Tell us about your most recent job</h1>
+    <div id="tabb">
+      <p id="tabb1"><input placeholder="Job title..." oninput="this.className = ''" name="jobtitle"></p>
+      <p id="tabb2"><input placeholder="Employer..." oninput="this.className = ''" name="employer"></p>
+      </div>
+
+      <div id="tabb">
+        <p id="tabb1"><input placeholder="City..." oninput="this.className = ''" name="jcity"></p>
+        <p id="tabb2"><input placeholder="State..." oninput="this.className = ''" name="jstate"></p>
+        </div>
+
+        <div id="tabb">
+          <label for="start">Start Date:</label>
+          <p id="tabb1"><input type="date" placeholder="Start date..." oninput="this.className = ''" name="jstart"></p>
+          <label for="end">End Date:</label>
+          <p id="tabb2"><input type="date" placeholder="End date..." oninput="this.className = ''" name="jend"></p>
+          </div>
+  </div>
+
+  <div class="tab"><h1>A little more about your experience</h1>
+    Placements/Internships
+    <div id="tabb">
+      <p id="tabb1"><input placeholder="Job title..." oninput="this.className = ''" name="jobtitle1"></p>
+      <p id="tabb2"><input placeholder="Employer..." oninput="this.className = ''" name="employer1"></p>
+      </div>
+
+      <div id="tabb">
+        <p id="tabb1"><input placeholder="City..." oninput="this.className = ''" name="ecity"></p>
+        <p id="tabb2"><input placeholder="State..." oninput="this.className = ''" name="estate"></p>
+        </div>
+
+
+        <div id="tabb">
+          <label for="start">Start Date:</label>
+          <p id="tabb1"><input type="date" placeholder="Start date..." oninput="this.className = ''" name="estart"></p>
+          <label for="end">End Date:</label>
+          <p id="tabb2"><input type="date" placeholder="End date..." oninput="this.className = ''" name="eend"></p>
+          </div>
+  </div>
+
+  <div class="tab"><h1>Education</h1>
+    Tell us about your educational background
+    <div id="tabb">
+      <p id="tabb1"><input placeholder="School Name..." oninput="this.className = ''" name="schoolname"></p>
+      <p id="tabb2"><input placeholder="School Location..." oninput="this.className = ''" name="schoollocation"></p>
+      </div>
+
+      <div id="tabb">
+        <p id="tabb1"><label for="degree">Degree:</label>
+          <select id="social" name="degree">
+            <option value="Select">Select</option>
+            <option value="High School Diploma">High School Diploma</option>
+            <option value="GED">GED</option>
+            <option value="Bachelor Of Science">Bachelor Of Science</option>
+            <option value="Master Of Science">Master Of Science</option>
+            <option value="Ph.D.">Ph.D.</option>
+            <option value="None">None</option>
+          </select></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1"><input placeholder="Field Of Study..." oninput="this.className = ''" name="fieldofstudy"></p>
+          </div> 
+
+        <div id="tabb">
+          <label for="start">Start Date:</label>
+          <p id="tabb1"><input type="date" placeholder="Start date..." oninput="this.className = ''" name="edustart"></p>
+          <label for="end">End Date:</label>
+          <p id="tabb2"><input type="date" placeholder="End date..." oninput="this.className = ''" name="eduend"></p>
+          </div>
+  </div>
+
+  <div class="tab"><h1>Education</h1>
+    A little bit more about your educational background
+    <div id="tabb">
+      <p id="tabb1"><input placeholder="School Name..." oninput="this.className = ''" name="schoolname1"></p>
+      <p id="tabb2"><input placeholder="School Location..." oninput="this.className = ''" name="schoollocation1"></p>
+      </div>
+
+      <div id="tabb">
+        <p id="tabb1"><label for="degree1">Degree:</label>
+            <select id="social" name="degree1">
+            <option value="Select">Select</option>
+            <option value="High School Diploma">High School Diploma</option>
+            <option value="GED">GED</option>
+            <option value="Bachelor Of Science">Bachelor Of Science</option>
+            <option value="Master Of Science">Master Of Science</option>
+            <option value="Ph.D.">Ph.D.</option>
+            <option value="None">None</option>
+          </select></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1"><input placeholder="Field Of Study..." oninput="this.className = ''" name="fieldofstudy1"></p>
+          </div> 
+
+        <div id="tabb">
+          <label for="start">Start Date:</label>
+          <p id="tabb1"><input type="date" placeholder="Start date..." oninput="this.className = ''" name="edustart1"></p>
+          <label for="end">End Date:</label>
+          <p id="tabb2"><input type="date" placeholder="End date..." oninput="this.className = ''" name="eduend1"></p>
+          </div>
+  </div>
+
+  <div class="tab"><h1>What Skills do you have?</h1>
+    Let employers know your skill set in details
+    <div id="tabb">
+      <p id="tabb1"><label for="keyskills">Key Skills:</label>
+        <select id="social" name="keyskills">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+        </select></p>
+  
+    </div>
+
+    <div id="tabb">
+      <p id="tabb1">
+        <select id="social" name="keyskills0">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+        </select></p>
+      </div>
+      <div id="tabb">
+          <p id="tabb1">
+            <select id="social" name="keyskills1">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+            </select></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1">
+            <select id="social" name="keyskills2">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+            </select></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1">
+            <select id="social" name="keyskills3">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+            </select></p>
+        </div>
+
+        <div id="tabb">
+          <p id="tabb1">
+            <select id="social" name="keyskills4">
+          <option value="Select">Select</option>
+          <option value="Team Work and Collaboration">Team Work and Collaboration</option>
+          <option value="Multitasking Abilities">Multitasking Abilities</option>
+          <option value="Decision Making">Decision Making</option>
+          <option value="Flexible and Adaptable">Flexible and Adaptable</option>
+          <option value="Organization and Time Management">Organization and Time Management</option>
+          <option value="Analytical and Critical Thinking">Analytical and Critical Thinking</option>
+            </select></p>
+        </div>
+
+        <input type="text" id="ads" placeholder="Additional skills......." oninput="this.className = ''" name="addskills">
+        <input type="submit" name="submit" value="Submit">
+  </div>
+
+  
+  <!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+      <div id="bts1"><button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button></div>
+      <div id="bts2"><button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button></div>
+</form>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  //if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+</body>
+</html>

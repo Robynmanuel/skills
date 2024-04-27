@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Raleway");
+body{
+    margin: 0;
+    
+  }
+  
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid slategrey;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+  #rit{
+    background-color: black;
+    position: fixed;
+    background-size: cover;
+    width: 300px;
+    height: 1755px;
+    margin-left: 76%;
+    margin-top: -390%;
+  }
+  
+   label {
+    padding-left: 5%; 
+    padding-top: 5%;
+    font-family: "Raleway";
+  }
+  
+    #module{
+    padding: 10px;
+    margin-top: 25px;
+    margin-right: 20px;
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+  
+  #program{
+    padding: 10px;
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+  
+  #lab{
+      margin-left: -5%;
+  }
+  #grade{
+    padding: 10px;
+    width: 10%;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway";
+    border: 1px solid #aaaaaa;
+  }
+
+  #sub{
+    width: 150px;
+    height: 50px;
+    margin-left: 75%;
+    margin-top: 10%;
+    padding-top: 2px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "trirong", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#sub:hover, #sub:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}
+
+#clrr{
+    width: 200px;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: -13%;
+    padding-top: 2px;
+    font-family: "Raleway";
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#clrr:hover, #clrr:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}
+  
+  h1 {
+    padding-left: 5%; 
+    padding-top: 5%;
+    font-family: "Raleway";
+  }
+  
+#firlas{
+    display: flex;
+    margin-top: 30px;
+    width: 60%;
+    padding-left: 5%; 
+    font-family: "Raleway";
+}
+
+#fir{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Raleway";
+}
+
+#las{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: "Raleway";
+}
+
+#las21{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: "Raleway";
+}
+
+#prof{
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 5%;
+    font-family: "Raleway";
+}
+
+#prof1{
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 5%;
+    font-family: "Raleway";
+}
+
+#pos{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: "Raleway";
+}
+
+#social{
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: "Raleway";
+}
+
+#frr h1{
+    margin-top: 5%;
+}
+#firlas1{
+    display: flex;
+    width: 60%;
+    padding-left: 5%; 
+    margin-top: 35px;
+}
+
+#fir1{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Raleway";
+}
+
+#las1{
+    flex-grow: 1;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: "Raleway";
+}
+
+#frk p {
+    padding-left: 5%; 
+    padding-top: 18px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+#jrk p {
+    padding-left: 5%; 
+    padding-top: 18px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+
+#ork p {
+    padding-left: 5%; 
+    padding-top: 18px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+#pro2 p {
+    padding-left: 5%; 
+    padding-top: 18px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+#lk p {
+    padding-left: 5%; 
+    padding-top: 18px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+#ads{
+    margin-top: 32%;
+    margin-left: 1%;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+#pro2{
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15%;
+    font-family: "Raleway";
+}
+
+#pro2 label{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#sks{
+    margin-left: 12.5%;
+    margin-top: -15px;
+}
+#de{
+    width: 400px;
+    height: 45px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "Raleway";
+}
+
+#de1{
+    width: 400px;
+    height: 45px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "Raleway";
+}
+#est{
+    font-family: "Raleway";
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#een{
+    font-family: "Raleway";
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#der{
+     width: 300px;
+     height: 45px;
+     font-size: 18px;
+     margin-left: 10px;
+     font-family: "Raleway";
+}
+
+#sub{
+    width: 120px;
+    height: 43px;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding-top: 2px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    font-family: "trirong", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#sub:hover, #sub:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}
+
+#ub{
+    width: 120px;
+    height: 43px;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding-top: 2px;
+    margin-bottom: 5%;
+    font-size: 16px;
+    font-family: "trirong", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+#ub:hover, #ub:active {
+    background-color: black;
+    color:white;
+    border: none;
+    transform: scale(1.1); 
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+@media only screen and (max-width:320px) {
+#pos{
+      margin-left: -210%;
+      margin-top: 25%;
+}
+ 
+#firlas{
+    width: 10%;
+}
+
+#prof{
+    width: 40%;
+}
+
+#frr{
+    margin-top: 15%;
+}
+
+#frk{
+    margin-top: 15%;
+}
+
+#jrk{
+    margin-top: 15%;
+}
+
+#ork{
+    margin-top: 15%;
+}
+
+#pro2{
+    margin-top: 12%;
+}
+
+#ads{
+    margin-top: 105%;
+    margin-left: 1%;
+}
+}
+
+   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media only screen and (min-width:321px) and (max-width:768px) {
+    
+#pos{
+      margin-left: 1px;
+      margin-top: 5%;
+	  width: 100%;
+}
+ 
+#prof{
+	margin-top: 1%;
+	margin-left: 10%;
+    width: 80%;
+}
+
+#firlas{
+   margin-left: 5%;
+   flex-direction: column;
+   width: 85%;
+}
+	
+#fir{
+	width:100%;
+}
+	
+#las{
+	margin-left: 1px;
+	width: 100%;
+}
+	
+#las21{
+	margin-left: 1px;
+	width: 100%;
+}
+	
+#frr{
+    margin-top: 15%;
+}
+
+	
+#firlas1{
+   margin-left: 5%;
+   flex-direction: column;
+   width: 90%;
+}
+
+#las21{
+	margin-top:10%;
+}
+#fir1{
+	width:90%;
+}
+	
+#las1{
+	margin-left: 1px;
+	width: 90%;
+}
+	
+#der{
+	margin-top: 2%;
+}
+	
+#prof1{
+	margin-top: 15%;
+	margin-left: 8%;
+	width: 85%;
+}
+
+#de{
+	width: 96%;
+
+}
+	
+#de1{
+	width: 110%;
+	margin-left: -14%;
+}
+#frk{
+    margin-top: 15%;
+}
+
+#jrk{
+    margin-top: 15%;
+}
+
+#ork{
+    margin-top: 15%;
+}
+
+#pro2{
+    margin-top: 12%;
+}
+
+#ads{
+	width: 100%;
+    margin-top: 155%;
+    margin-left: -9%;
+}
+}
